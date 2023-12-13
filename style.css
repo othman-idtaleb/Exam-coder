@@ -1,0 +1,832 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.nav{
+    width: 100%;
+    height: 80px;
+    background-color: #0EB05C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+}
+
+.navLogo{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 50px;
+}
+
+ ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;  
+}
+
+ul a{
+    text-decoration: none;
+}
+
+ ul li{
+    list-style: none;
+    padding: 5px 10px;
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    transition: ease-out 0.1s;
+    
+}
+
+
+
+.nav .navBtn{
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav .navBtn .navBtnFirst, .navBtnSecond{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 1s;
+}
+
+.nav .navBtn .navBtnFirst:hover, .navBtnSecond:hover{
+    border: 2px solid #ffffff;
+    box-shadow: 4px 4px 4px #000000 inset ;
+}
+
+ li:hover{
+    color: #000000;
+    border-bottom: 2px solid #ffffff;
+    padding: 5px 10px;
+    transition: 0.5s all;
+
+}
+
+
+
+
+
+
+.slider{
+    width: 100%;
+    height: 550px;
+    background-color: #B4FAEB;
+    
+}
+
+.imageSlider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.slider img{
+    margin-top: 70px;
+    width: 550px;
+    height: 480px;
+}
+
+
+
+
+.card{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #FFF;
+
+}
+
+.card .cardContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.card h1 {
+    color: #000;
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.card .content{
+    width: 450px;
+    height: 500px;
+    background: #F5F5FA;
+    box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 20px;
+    margin: 15px;
+
+}
+
+.card .content .cardImage{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cardImage img{
+    width: 430px;
+    height: 200px;
+}
+
+.card .content .cardText h2{
+    color: #000;
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+.card .content .cardText p{
+    color: #000;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    margin: 20px;
+
+}
+.card .content .cardBtn{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    
+
+}
+.card .content .cardBtn button{
+    width: 164px;
+    height: 48.321px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.70);
+    background: #ECECED;
+    color: #000;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 15px;
+    cursor: pointer;
+
+}
+.card .cardBtnLast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .cardBtnLast button{
+    width: 164px;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #E3E3E4;
+    border: 1px solid #000;
+    border-radius: 15px;
+    color: #000;
+    text-align: center;
+    font-family: Arial;
+    font-size: 26px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+.card .cardBtnLast button:hover{
+    border: 1px solid #363636; 
+    background: #E3E3E4;
+    color: #000000;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+
+.card .content:hover{
+    box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.5s all;
+
+}
+
+.card .content .cardBtn button:hover{
+    background-color: #FFF;
+    
+
+}
+
+
+
+.profile{
+    width: 100%;
+    height: 650px;
+    background-color: #0EB072;
+
+}
+
+.profile h1{
+    color: #FFF;
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 0px;
+
+}
+
+.toutContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .profileContent{
+    width: 900px;
+    height: 500px;
+    border-radius: 20px;
+    background: #F5F5FA;
+    box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileTitreImage{
+    margin: 20px;
+
+}
+
+.profileTitreImage .profileTitre h2{
+    color: #000;
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+.profileTitreImage .profileTitre p{
+    color: #555;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.profileTitreImage .profileImage img{
+    width: 350px;
+    height: 350px;
+    margin-top: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+
+
+.profileTextBtn{
+    margin: 20px;
+
+}
+
+.profileTextBtn .profileText{
+    color: #000;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    
+}
+
+.profileTextBtn .profileBtn button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #D9D9D9;    
+    color: #000;
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.profileBtn button:hover{
+    background-color: #FFF;
+    transition: 0.5s all;
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 330px;
+    background: #ffffff;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 30px 50px;
+    border-bottom: 1px solid #FFF;
+}
+
+.footerContent .listFooter h1{
+    color: #000;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 50px;
+}
+
+  .footerUl .footerA{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.footerUl{
+    display: block;
+}
+
+ .footerA .footerLi{
+    color: #000;
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: ease-out 0.1s;
+}
+
+
+
+.footer p{
+    color: #000000;
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footerLi:hover{
+    border-bottom: 1px solid #000;
+    transition: 0.5s all;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .nav{
+        width: 100%;
+        height: 150px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: static;
+    }
+
+    .navLogo{
+        font-size: 22px;
+        padding-top: 20px;
+        margin-left: 10px;
+    }
+
+    .navList{
+        position: relative;
+    }
+    
+     .navUl{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 80px;
+        gap: 10px;
+    }
+    
+     .navUl li{
+        font-size: 20px; 
+        padding-left: 10px;
+    }
+    
+    .nav .navBtn{
+        position: relative;
+        display: flex;
+        margin-right: 0;
+        
+    }
+    
+    .nav .navBtn .navBtnFirst{
+        position: absolute;
+        left: 270px;
+        bottom: -10px;
+        padding: 8px 5px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+    .nav .navBtn .navBtnSecond{
+        position: absolute;
+        left: 170px;
+        bottom: -10px;
+        padding: 8px 10px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+
+    .slider{
+        width: 100%;
+        height: 400px;
+        
+    }
+    
+    .slider img{
+        margin-top: 10px;
+        width: 350px;
+        height: 300px;
+    }
+    
+
+    .card{
+        position: relative;
+        width: 100%;
+        height: auto;
+    
+    }
+    
+    .card h1 {
+        font-size: 34px;
+    }
+    
+    .card .content{
+        width: 380px;
+        height: 500px;
+    
+    }
+
+    
+    .cardImage img{
+        width: 310px;
+        height: 200px;
+    }
+    
+    .card .content .cardText h2{
+        font-size: 28px;
+        margin-left: 30px;
+        margin-top: 10px;
+    
+    }
+
+    
+
+    .card .content .cardBtn button{
+        width: 150px;
+        height: 48.321px;
+    
+    }
+
+    .card .cardBtnLast button{
+        width: 150px;
+        height: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .profile{
+        width: 100%;
+        height: 650px;
+    
+    }
+    
+    .profile h1{
+        font-size: 34px;
+    
+    }
+    
+    .toutContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .profile .profileContent{
+        width: 330px;
+        height: 500px;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .profileTitreImage{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 20px;
+    
+    }
+    
+    .profileTitreImage .profileTitre h2{
+        font-size: 30px;
+    }
+
+    .profileTitreImage .profileTitre p{
+        color: #555;
+        font-family: Arial;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    
+    .profileTitreImage .profileImage img{
+        width: 150px;
+        height: 150px;
+        margin: 0;
+    }
+
+    .profileTextBtn .profileText{
+        color: #000;
+        font-family: Arial;
+        font-size: 22px;
+        font-weight: 300;
+        margin-bottom: 10px;
+        
+    }
+
+    .profileTextBtn .profileBtn button{
+        width: 130px;
+        height: 40px;
+        font-size: 22px;
+    }
+    
+    
+    .footer{
+        width: 100%;
+        height: 300px;
+    }
+    
+    .footerContent{
+        margin: 10px 5px;
+    }
+    
+    .footerUl{
+        margin-bottom: 20px;
+    }
+    
+    .footer p{
+        font-size: 18px;
+    }
+
+    .footerContent .listFooter h1{
+        color: #000;
+        font-family: Arial;
+        font-size: 26px;
+        font-weight: 700;
+        margin-left: 30px;
+    }
+    
+     .footerA .footerLi{
+        font-size: 24px;
+        padding: 5px 10px;
+    }
+    
+    .footerContent .iconsFooter h1{
+        font-size: 26px;
+        margin-right: 30px;
+
+    }
+
+    .footerUl .footerA{
+        margin-left: 20px;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .nav{
+        width: 100%;
+        height: 80px;
+    }
+    
+    .navLogo{
+        margin-left: 20px;
+    }
+    
+     ul{
+        gap: 10px;  
+    }
+    
+     ul li{
+        padding: 5px 0px;
+        font-size: 20px;
+        
+    }
+    
+    
+    
+    .nav .navBtn{
+        margin-right: 20px;
+        gap: 10px;
+    }
+    
+    .nav .navBtn .navBtnFirst, .navBtnSecond{
+        padding: 10px 18px;
+        font-size: 18px;
+    }
+    
+    
+    
+    
+    
+    
+    .slider{
+        width: 100%;
+        height: 550px;
+        
+    }
+    
+
+    
+    .slider img{
+        margin-top: 85px;
+        width: 550px;
+        height: 450px;
+    }
+
+
+
+    .card{
+        width: 100%;
+        height: auto;
+    
+    }
+    
+    .card .cardContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    
+    .card h1 {
+        font-size: 40px;
+
+    }
+    
+    .card .content{
+        width: 350px;
+        height: 500px;
+        margin: 15px;
+    
+    }
+    
+    .card .content .cardImage{
+        margin-top: 20px;
+    }
+    
+    .cardImage img{
+        width: 320px;
+        height: 200px;
+    }
+    
+    .card .content .cardText h2{
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
+        margin-top: 10px;
+    
+    }
+    .card .content .cardText p{
+        font-size: 24px;
+        margin: 0;
+        margin: 20px;
+    
+    }
+    .card .content .cardBtn{
+        margin-right: 20px;
+        
+    
+    }
+    .card .content .cardBtn button{
+        width: 130px;
+        height: 40px;
+        font-size: 24px;
+        margin-top: 15px;
+    
+    }
+
+    .card .cardBtnLast button{
+        width: 150px;
+        height: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+
+
+
+    .profile{
+        width: 100%;
+        height: 650px;
+    
+    }
+    
+    .profile h1{
+        font-size: 40px;
+        padding: 20px 0px;
+    
+    }
+    
+    
+    .profile .profileContent{
+        width: 700px;
+        height: 500px;
+    }
+    
+    .profileTitreImage{
+        margin: 20px;
+    
+    }
+    
+    .profileTitreImage .profileTitre h2{
+        font-size: 36px;
+        padding: 0;
+        margin: 0;
+    }
+    .profileTitreImage .profileTitre p{
+        font-size: 24px;
+    }
+    
+    .profileTitreImage .profileImage img{
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    
+    
+    
+    .profileTextBtn{
+        margin: 10px;
+    
+    }
+    
+    .profileTextBtn .profileText{
+        font-size: 20px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .profileTextBtn .profileBtn button{
+        width: 130px;
+        height: 40px;
+        font-size: 22px;
+    }
+    
+    
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
